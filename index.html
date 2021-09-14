@@ -241,7 +241,7 @@
                     <div class="text">Mande uma Mensagem</div>
                     <form class="contact-form" action="https://api.staticforms.xyz/submit" method="POST">
                         <input type="hidden" name="accessKey" value="4140a7ae-b46f-4c54-8799-c4199418ed3f">
-                        <input type="hidden" name="redirectTo" href="https://pedraraujo.github.io/Portfolio/">
+                        <input type="hidden" name="redirectTo" value="https://pedraraujo.github.io/Portfolio/#contact">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" name= "nome" class="fullname" placeholder="Nome" required="required">
@@ -257,7 +257,7 @@
                             <textarea class="message" name= "message" cols="30" rows="10" placeholder="Mensagem..." required="required"></textarea>
                         </div>
                         <div class="button-area">
-                            <button class="send-msg" type="submit" name="send">Enviar</button>
+                            <button class="send-msg" type="submit" name="send" onclick="Enviar()">Enviar</button>
                         </div>
                     </form>
                 </div>

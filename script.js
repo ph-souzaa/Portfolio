@@ -49,13 +49,12 @@ $(document).ready(function(){
     });
 });
 
-
 function Enviar() {
 
     var nome = document.getElementsByClassName("fullname");
 
     if (nome.value != "") {
-        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+        alert('Sua mensagem foi enviada com sucesso, obrigado!');
     }
 
 }
