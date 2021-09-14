@@ -1,3 +1,3 @@
-#  Versão 0.1 Portifolio 
+#  Versão 0.1 Portfolio 
 
-Portifolio : Pedro Henrique Araujo de Souza
+Portfolio : Pedro Henrique Araujo de Souza
