@@ -49,6 +49,8 @@ $(document).ready(function(){
     });
 });
 
+// Função para disparar um alerta para enviar mensagem. // Mexer futuramente
+
 function Enviar() {
 
     var nome = document.getElementsByClassName("fullname");
@@ -58,3 +60,16 @@ function Enviar() {
     }
 
 }
+
+//Pré loading
+
+var i = setInterval(function () {
+    
+    clearInterval(i);
+
+    document.getElementById("content").style.display = "block";
+    document.getElementById("loading").style.display = "none";
+
+    
+
+}, 4000);

@@ -26,6 +26,39 @@ html {
   background: #555;
 }
 
+
+/* Loading */
+
+#content {
+  display: none;
+}
+
+#loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vh;
+  background-color: #3d3446;
+}
+
+#conteudo-loading {
+  animation: is-rotation 1s infinite;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  border: 10px solid #888;
+  border-top-color: #f1f1f1;
+}
+
+@keyframes is-rotation {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* the end Loading */
+
 /* all similar content styling codes */
 section {
   padding: 100px 0;
