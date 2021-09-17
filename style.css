@@ -50,10 +50,6 @@ html {
   border-top-color: #f1f1f1;
 }
 
-#content {
-  animation: is-up 1s;
-}
-
 @keyframes is-rotation {
   to {
     transform: rotate(1turn);
@@ -209,7 +205,7 @@ section .title::after {
 /* botao centro para ir para o sobre */
 
 .button-down {
-  animation: is-up-down 1s infinite;
+  animation: is-up-down 2s infinite;
   margin: 0 auto;
   margin-top: 30px;
   height: 45px;
