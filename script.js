@@ -70,4 +70,8 @@ var i = setInterval(function () {
     document.getElementById("content").style.display = "block";
     document.getElementById("loading").style.display = "none";
 
+<<<<<<< HEAD
 }, 4000);
+=======
+}, 3000);
+>>>>>>> 04948554d77116e0a8dd989453047c7210c0f3be

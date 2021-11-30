@@ -1,5 +1,5 @@
 /*  IMPOTA FONT DO GOOGLE */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -25,7 +25,6 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
 
 /* Loading */
 
@@ -199,13 +198,14 @@ section .title::after {
   opacity: 1;
   pointer-events: auto;
 }
-.scroll-up-btn:hover{
-    filter: brightness(60%);
+.scroll-up-btn:hover {
+  filter: brightness(60%);
 }
 
 /* botao centro para ir para o sobre */
 
 .button-down {
+  animation: is-up-down 2s infinite;
   margin: 0 auto;
   margin-top: 30px;
   height: 45px;
@@ -228,6 +228,18 @@ section .title::after {
 
 #a-button {
   all: unset;
+}
+
+@keyframes is-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* home section styling */
@@ -303,7 +315,7 @@ section .title::after {
 }
 .about .about-content .right a {
   display: inline-block;
-  margin-left: 240px;
+  margin: 0 240px;
   background: #3d3446;
   color: #fff;
   font-size: 20px;
@@ -651,6 +663,7 @@ footer span a:hover {
 }
 
 /* responsive media query start */
+
 @media (max-width: 1104px) {
   .about .about-content .left img {
     height: 350px;
@@ -664,6 +677,14 @@ footer span a:hover {
   }
 }
 @media (max-width: 947px) {
+  #loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 50vh;
+    background-color: #3d3446;
+  }
   .home {
     background: #3d3446;
   }
@@ -713,6 +734,7 @@ footer span a:hover {
   .about .about-content .column {
     width: 100%;
   }
+
   .about .about-content .left {
     display: flex;
     justify-content: center;
@@ -721,6 +743,11 @@ footer span a:hover {
   .about .about-content .right {
     flex: 100%;
   }
+
+  .about .about-content .right a {
+    margin: 100px 170px 10px;
+  }
+
   .services .serv-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
