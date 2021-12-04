@@ -54,13 +54,14 @@ $(document).ready(function(){
 function Enviar() {
 
     var nome = document.getElementsByClassName("fullname");
+    var email = document.getElementsByClassName("email-input");
+    var assunto = document.getElementsByClassName("subject");
+    var mensagem = document.getElementsByClassName("message");
 
-    if (nome.value != "") {
+    if (nome.value != null || email.value != null || assunto.value != null || mensagem.value != null) {
         alert('Sua mensagem foi enviada com sucesso, obrigado!');
     }
-
 }
-
 //Pré loading
 
 var i = setInterval(function () {
@@ -70,8 +71,6 @@ var i = setInterval(function () {
     document.getElementById("content").style.display = "block";
     document.getElementById("loading").style.display = "none";
 
-<<<<<<< HEAD
-}, 4000);
-=======
-}, 3000);
->>>>>>> 04948554d77116e0a8dd989453047c7210c0f3be
+}, 2000);
+
+
