@@ -32,12 +32,13 @@
         <!-- NAVBAR| BARRA DE NAVEGACAO -->
         <nav class="navbar">
             <div class="max-width">
-                <div class="logo"><a href="#">Portfólio</a></div>
+                <div class="logo"><a id="titulo-Portfolio" href="#">Portfólio</a></div>
                 <ul class="menu">
-                    <li><a href="#home" class="menu-btn">Home</a></li>
-                    <li><a href="#about" class="menu-btn">Sobre</a></li>
-                    <li><a href="#skills" class="menu-btn">Experiência</a></li>
-                    <li><a href="#contact" class="menu-btn">Contato</a></li>
+                    <li><a id="nav-home" href="#home" class="menu-btn">Home</a></li>
+                    <li><a id="nav-about" href="#about" class="menu-btn">Sobre</a></li>
+                    <li><a id="nav-skills" href="#skills" class="menu-btn">Experiência</a></li>
+                    <li><a id="nav-contact" href="#contact" class="menu-btn">Contato</a></li>
+                    <li id="trocali"> <a id="troca" class="menu-btn" onclick="trocaLinguagensUsa()"><img id="iconLinguagem" src="images/brasil.png"></a></li>
                 </ul>
                 <div class="menu-btn">
                     <i class="fas fa-bars"></i>
@@ -50,8 +51,8 @@
         <div class="max-width">
             <div class="row">
                 <div class="home-content">
-                    <div class="text-2">Pedro Henrique</div>
-                    <div class="text-1">Desenvolvedor de software</div> 
+                    <div id="text-2" class="text-2">Pedro Henrique</div>
+                    <div id="text-1" class="text-1">Desenvolvedor de software</div> 
                     <div class="button-down">
                         <a href="#about" id="a-button">
                             <i class="fas fa-angle-double-down"></i>
@@ -67,14 +68,14 @@
     <!-- ABOUT | SOBRE -->
         <section class="about" id="about">
             <div class="max-width">
-                <h2 class="title">Sobre</h2>
+                <h2 id ="title-sobre" class="title">Sobre</h2>
                 <div class="about-content">
                     <div class="column left">
                         <img src="images/perfil.jpg" alt="">
                     </div>
                     <div class="column right">
-                        <div class="text">Olá, tudo bem com você ? <span class="typing-2"></span></div>
-                        <p>Tenho 21 anos, estou cursando Bacharelado em Sistema da Informação pela Universidade Unilasalle-RJ. Tenho conhecimento em linguagens de programação C#.NET, SQL Server, JQuery, Javascript e Angular. </p>
+                        <div id="sobre-text1"class="text">Olá, tudo bem com você ? <span class="typing-2"></span></div>
+                        <p id="sobre-text2">Tenho 21 anos, estou cursando Bacharelado em Sistema da Informação pela Universidade Unilasalle-RJ. Tenho conhecimento em linguagens de programação C#.NET, SQL Server, JQuery, Javascript e Angular. </p>
                         <!--<a href="arq/curriculooo.pdf" download="curriculo.pdf" type="application/pdf" target="_blank" >Currículo</a>-->
                     </div>
                 </div>
@@ -119,17 +120,17 @@
     <!-- SKILLS | HABILIDADES -->
         <section class="skills" id="skills">
             <div class="max-width">
-                <h2 class="title">Experiência Profissional</h2>
+                <h2 id="title-experiencia" class="title">Experiência Profissional</h2>
                 <div class="skills-content">
                     <div class="column left">
                         <div class="text"> - Deloitte Touche Tohmatsu Limited</div>
                         <br>
-                        <p>Trabalhei como jovem aprendiz na Deloitte durante 2 anos, auxiliava no suporte interno, na configuração e manutenção de computadores.</p>
+                        <p id="text-experiencia1">Trabalhei como jovem aprendiz na Deloitte durante 2 anos, auxiliava no suporte interno, na configuração e manutenção de computadores.</p>
                     </div>
                     <div class="column right">
                         <div class="text"> - I2tech Solutions</div>
                         <br>
-                        <p>Trabalho com Desenvolvedor de software, utilizando as linguagens de programação C#.NET, SQL Server, JQuery, Javascript e Angular.</p>
+                        <p id="text-experiencia2">Trabalho com Desenvolvedor de software, utilizando as linguagens de programação C#.NET, SQL Server, JQuery, Javascript e Angular.</p>
                     </div>
                 <!--   DASHBORD SKILLS
 
@@ -227,16 +228,16 @@
     <!-- CONTACT | CONTATO -->
         <section class="contact" id="contact">
             <div class="max-width">
-                <h2 class="title">Contato</h2>
+                <h2 id="title-contato1" class="title">Contato</h2>
                 <div class="contact-content">
                     <div class="column left">
-                        <div class="text">Entre em Contato</div>
-                        <p>Aguardo por uma mensagem sua. Você pode entrar em contato através do formulário.</p>
+                        <div id="title-contato2" class="text">Entre em Contato</div>
+                        <p id="text-contato2">Aguardo por uma mensagem sua. Você pode entrar em contato através do formulário.</p>
                         <div class="icons">
                             <div class="row">
                                 <i class="fas fa-user"></i>
                                 <div class="info">
-                                    <div class="head">Nome:</div>
+                                    <div id="text-contato3" class="head">Nome:</div>
                                     <div class="sub-title">Pedro Henrique</div>
                                 </div>
                             </div>
@@ -260,26 +261,26 @@
                         </div>
                     </div>
                     <div class="column right">
-                        <div class="text">Mande uma Mensagem</div>
+                        <div id="text-contato4" class="text">Mande uma Mensagem</div>
                         <form class="contact-form" action="https://api.staticforms.xyz/submit" method="POST">
                             <input type="hidden" name="accessKey" value="4140a7ae-b46f-4c54-8799-c4199418ed3f">
                             <input type="hidden" name="redirectTo" value="https://ph-souzaa.github.io/Portfolio/">
                             <div class="fields">
                                 <div class="field name">
-                                    <input type="text" name= "nome" class="fullname" placeholder="Nome" required="required">
+                                    <input id="form-nome" type="text" name= "nome" class="fullname" placeholder="Nome" required="required">
                                 </div>
                                 <div class="field email">
-                                    <input type="email" name= "email" class="email-input" placeholder="Email" required="required">
+                                    <input id="form-email" type="email" name= "email" class="email-input" placeholder="Email" required="required">
                                 </div>
                             </div>
                             <div class="field">
-                                <input type="text" name= "subject" class="subject" placeholder="Assunto" required="required">
+                                <input id="form-assunto" type="text" name= "subject" class="subject" placeholder="Assunto" required="required">
                             </div>
                             <div class="field textarea">
-                                <textarea class="message" name= "message" cols="30" rows="10" placeholder="Mensagem..." required="required"></textarea>
+                                <textarea id="form-mensagem" class="message" name= "message" cols="30" rows="10" placeholder="Mensagem..." required="required"></textarea>
                             </div>
                             <div class="button-area">
-                                <button class="send-msg" type="submit" name="send" onclick="Enviar()">Enviar</button>
+                                <button id="form-botao" class="send-msg" type="submit" name="send" onclick="Enviar()">Enviar</button>
                             </div>
                         </form>
                     </div>

@@ -156,6 +156,13 @@ section .title::after {
   margin-left: 25px;
   transition: color 0.3s ease;
 }
+
+#iconLinguagem {
+  margin-bottom: -5px;
+  height: 24px;
+  width: 24px;
+}
+
 .navbar .menu li a:hover {
   filter: brightness(60%);
 }
@@ -166,6 +173,8 @@ section .title::after {
 .navbar.sticky .menu li a:hover {
   filter: brightness(60%);
 }
+
+
 
 /* menu btn styling */
 .menu-btn {
@@ -380,8 +389,18 @@ section .title::after {
 
 /* skills section styling */
 
+.skills{
+  background-color: #3d3446;
+  color: #f1f1f1;
+}
+
 .skills .title::after {
+  color:#f1f1f1;
   content: " | ";
+  background-color: #3d3446;
+}
+.skills .title::before {
+  background-color: #f1f1f1;
 }
 .skills .skills-content .column {
   padding: 35px;
